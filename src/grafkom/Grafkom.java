@@ -17,6 +17,7 @@ public class Grafkom {
         // TODO code application logic here
         Gui r = new Gui();
         r.setVisible(true);
-        r.setLocationRelativeTo(null);
+        r.setLocationRelativeTo(null);        
+        r.setBounds(0, 0, 1366,768);
     }
 }

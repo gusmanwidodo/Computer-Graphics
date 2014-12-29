@@ -385,3 +385,407 @@ class Elips extends JPanel {
     }
     
 }
+
+class NPM extends JPanel{
+    int x, y;
+    Color color = Color.BLACK;
+
+    public NPM() {
+        setBackground(Color.WHITE);        
+        setSize(1100, 750);
+    }
+    
+    public void paint(Graphics g) {
+        super.paint(g);
+        g.setColor(color);
+        
+//        tebal 40
+        
+        //Membuat G
+        g.drawLine(100+x, 100+y, 220+x, 100+y);
+        g.drawLine(140+x, 140+y, 220+x, 140+y);
+        g.drawLine(160+x, 180+y, 220+x, 180+y);
+        g.drawLine(160+x, 220+y, 180+x, 220+y);
+        g.drawLine(140+x, 260+y, 180+x, 260+y);
+        g.drawLine(100+x, 300+y, 220+x, 300+y);        
+
+        g.drawLine(100+x, 100+y, 100+x, 300+y);
+        g.drawLine(140+x, 140+y, 140+x, 260+y);
+        g.drawLine(160+x, 180+y, 160+x, 220+y);
+        g.drawLine(180+x, 220+y, 180+x, 260+y);
+        g.drawLine(220+x, 180+y, 220+x, 300+y);
+        g.drawLine(220+x, 100+y, 220+x, 140+y);
+        
+        //Membuat 5
+        g.drawLine(240+x, 100+y, 360+x, 100+y);
+        g.drawLine(280+x, 140+y, 360+x, 140+y);
+        g.drawLine(280+x, 180+y, 360+x, 180+y);
+        g.drawLine(240+x, 220+y, 320+x, 220+y);
+        g.drawLine(240+x, 260+y, 320+x, 260+y);
+        g.drawLine(240+x, 300+y, 360+x, 300+y);        
+
+        g.drawLine(240+x, 100+y, 240+x, 220+y);
+        g.drawLine(240+x, 260+y, 240+x, 300+y);
+        g.drawLine(280+x, 140+y, 280+x, 180+y);
+        g.drawLine(320+x, 220+y, 320+x, 260+y);
+        g.drawLine(360+x, 100+y, 360+x, 140+y);
+        g.drawLine(360+x, 180+y, 360+x, 300+y);
+        
+        //Membuat 7
+        g.drawLine(380+x, 100+y, 500+x, 100+y);
+        g.drawLine(380+x, 140+y, 460+x, 140+y);
+        g.drawLine(460+x, 300+y, 500+x, 300+y);        
+
+        g.drawLine(380+x, 100+y, 380+x, 140+y);
+        g.drawLine(460+x, 140+y, 460+x, 300+y);
+        g.drawLine(500+x, 100+y, 500+x, 300+y);
+
+        //Membuat 3
+        g.drawLine(520+x, 100+y, 640+x, 100+y);
+        g.drawLine(520+x, 140+y, 600+x, 140+y);
+        g.drawLine(520+x, 180+y, 600+x, 180+y);
+        g.drawLine(520+x, 220+y, 600+x, 220+y);
+        g.drawLine(520+x, 260+y, 600+x, 260+y);
+        g.drawLine(520+x, 300+y, 640+x, 300+y);        
+
+        g.drawLine(520+x, 100+y, 520+x, 140+y);
+        g.drawLine(520+x, 180+y, 520+x, 220+y);
+        g.drawLine(520+x, 260+y, 520+x, 300+y);
+        g.drawLine(600+x, 140+y, 600+x, 180+y);
+        g.drawLine(600+x, 220+y, 600+x, 260+y);
+        g.drawLine(640+x, 100+y, 640+x, 300+y);
+
+        //Membuat 8
+        g.drawLine(660+x, 100+y, 780+x, 100+y);
+        g.drawLine(700+x, 140+y, 740+x, 140+y);
+        g.drawLine(700+x, 180+y, 740+x, 180+y);
+        g.drawLine(700+x, 220+y, 740+x, 220+y);
+        g.drawLine(700+x, 260+y, 740+x, 260+y);
+        g.drawLine(660+x, 300+y, 780+x, 300+y);        
+
+        g.drawLine(660+x, 100+y, 660+x, 300+y);
+        g.drawLine(700+x, 140+y, 700+x, 180+y);
+        g.drawLine(700+x, 220+y, 700+x, 260+y);
+        g.drawLine(740+x, 140+y, 740+x, 180+y);
+        g.drawLine(740+x, 220+y, 740+x, 260+y);
+        g.drawLine(780+x, 100+y, 780+x, 300+y);
+
+        //Membuat o
+        g.drawLine(800+x, 100+y, 920+x, 100+y);
+        g.drawLine(840+x, 140+y, 880+x, 140+y);
+        g.drawLine(840+x, 260+y, 880+x, 260+y);
+        g.drawLine(800+x, 300+y, 920+x, 300+y);        
+
+        g.drawLine(800+x, 100+y, 800+x, 300+y);
+        g.drawLine(840+x, 140+y, 840+x, 260+y);
+        g.drawLine(880+x, 140+y, 880+x, 260+y);
+        g.drawLine(920+x, 100+y, 920+x, 300+y);
+    }
+}
+
+class NPMScale extends JPanel{
+    int x, y;
+    Color color = Color.BLACK;
+
+    public NPMScale() {
+        setBackground(Color.WHITE);        
+        setSize(1100, 750);
+    }
+    
+    public void paint(Graphics g) {
+        super.paint(g);
+        g.setColor(color);
+        
+//        tebal 40
+        
+        //Membuat G
+        g.drawLine(100*x, 100*y, 220*x, 100*y);
+        g.drawLine(140*x, 140*y, 220*x, 140*y);
+        g.drawLine(160*x, 180*y, 220*x, 180*y);
+        g.drawLine(160*x, 220*y, 180*x, 220*y);
+        g.drawLine(140*x, 260*y, 180*x, 260*y);
+        g.drawLine(100*x, 300*y, 220*x, 300*y);        
+
+        g.drawLine(100*x, 100*y, 100*x, 300*y);
+        g.drawLine(140*x, 140*y, 140*x, 260*y);
+        g.drawLine(160*x, 180*y, 160*x, 220*y);
+        g.drawLine(180*x, 220*y, 180*x, 260*y);
+        g.drawLine(220*x, 180*y, 220*x, 300*y);
+        g.drawLine(220*x, 100*y, 220*x, 140*y);
+        
+        //Membuat 5
+        g.drawLine(240*x, 100*y, 360*x, 100*y);
+        g.drawLine(280*x, 140*y, 360*x, 140*y);
+        g.drawLine(280*x, 180*y, 360*x, 180*y);
+        g.drawLine(240*x, 220*y, 320*x, 220*y);
+        g.drawLine(240*x, 260*y, 320*x, 260*y);
+        g.drawLine(240*x, 300*y, 360*x, 300*y);        
+
+        g.drawLine(240*x, 100*y, 240*x, 220*y);
+        g.drawLine(240*x, 260*y, 240*x, 300*y);
+        g.drawLine(280*x, 140*y, 280*x, 180*y);
+        g.drawLine(320*x, 220*y, 320*x, 260*y);
+        g.drawLine(360*x, 100*y, 360*x, 140*y);
+        g.drawLine(360*x, 180*y, 360*x, 300*y);
+        
+        //Membuat 7
+        g.drawLine(380*x, 100*y, 500*x, 100*y);
+        g.drawLine(380*x, 140*y, 460*x, 140*y);
+        g.drawLine(460*x, 300*y, 500*x, 300*y);        
+
+        g.drawLine(380*x, 100*y, 380*x, 140*y);
+        g.drawLine(460*x, 140*y, 460*x, 300*y);
+        g.drawLine(500*x, 100*y, 500*x, 300*y);
+
+        //Membuat 3
+        g.drawLine(520*x, 100*y, 640*x, 100*y);
+        g.drawLine(520*x, 140*y, 600*x, 140*y);
+        g.drawLine(520*x, 180*y, 600*x, 180*y);
+        g.drawLine(520*x, 220*y, 600*x, 220*y);
+        g.drawLine(520*x, 260*y, 600*x, 260*y);
+        g.drawLine(520*x, 300*y, 640*x, 300*y);        
+
+        g.drawLine(520*x, 100*y, 520*x, 140*y);
+        g.drawLine(520*x, 180*y, 520*x, 220*y);
+        g.drawLine(520*x, 260*y, 520*x, 300*y);
+        g.drawLine(600*x, 140*y, 600*x, 180*y);
+        g.drawLine(600*x, 220*y, 600*x, 260*y);
+        g.drawLine(640*x, 100*y, 640*x, 300*y);
+
+        //Membuat 8
+        g.drawLine(660*x, 100*y, 780*x, 100*y);
+        g.drawLine(700*x, 140*y, 740*x, 140*y);
+        g.drawLine(700*x, 180*y, 740*x, 180*y);
+        g.drawLine(700*x, 220*y, 740*x, 220*y);
+        g.drawLine(700*x, 260*y, 740*x, 260*y);
+        g.drawLine(660*x, 300*y, 780*x, 300*y);        
+
+        g.drawLine(660*x, 100*y, 660*x, 300*y);
+        g.drawLine(700*x, 140*y, 700*x, 180*y);
+        g.drawLine(700*x, 220*y, 700*x, 260*y);
+        g.drawLine(740*x, 140*y, 740*x, 180*y);
+        g.drawLine(740*x, 220*y, 740*x, 260*y);
+        g.drawLine(780*x, 100*y, 780*x, 300*y);
+
+        //Membuat o
+        g.drawLine(800*x, 100*y, 920*x, 100*y);
+        g.drawLine(840*x, 140*y, 880*x, 140*y);
+        g.drawLine(840*x, 260*y, 880*x, 260*y);
+        g.drawLine(800*x, 300*y, 920*x, 300*y);        
+
+        g.drawLine(800*x, 100*y, 800*x, 300*y);
+        g.drawLine(840*x, 140*y, 840*x, 260*y);
+        g.drawLine(880*x, 140*y, 880*x, 260*y);
+        g.drawLine(920*x, 100*y, 920*x, 300*y);
+    }
+}
+
+class NPMRotate extends JPanel{
+    int r;
+    Color color = Color.BLACK;
+
+    public NPMRotate() {
+        setBackground(Color.WHITE);        
+        setSize(1100, 750);
+    }
+    
+    public int x1(int x, int y) {
+        
+//        int xp = 100 + (920 - 100 / 2);
+//        int yp = 100 + (300 - 100 / 2);
+    	int xp = 100;
+    	int yp = 150;
+
+        int x1= (int) (xp + ((x - xp) * Math.cos(r)) - ((y - yp) * Math.sin(r)));
+//        int x1= (int) (xp + x - xp * Math.cos(r) - (y - yp * Math.sin(r)));
+//        double y1= (yp + ((x - xp) * Math.sin(r)) + ((y - yp) * Math.cos(r)));
+    	return x1;
+    }   
+    
+    public int y1(int x, int y) {
+        
+//        int xp = 100 + (920 - 100 / 2);
+//        int yp = 100 + (300 - 100 / 2);
+    	int xp = 100;
+    	int yp = 150;
+
+//        double x1= (xp + ((x - xp) * Math.cos(r)) - ((y - yp) * Math.sin(r)));
+        int y1 = (int) (yp + ((x - xp) * Math.sin(r)) + ((y - yp) * Math.cos(r)));
+//        int y1 = (int) (yp + x - xp * Math.sin(r) + (y - yp * Math.cos(r)));
+    	return y1;
+    }
+    
+    public void paint(Graphics g) {
+        super.paint(g);
+        g.setColor(color);        
+        
+//        int xp = 100 + (920 - 100 / 2);
+//        int yp = 100 + (300 - 100 / 2);
+
+//        x1= (xp + ((X - xp) * Math.cos(r)) - ((Y - yp) * Math.sin(r)))
+//        y1= (yp + ((X - xp) * Math.sin(r)) + ((Y - yp) * Math.cos(r)))
+        
+//        tebal 40
+        
+        //Membuat G
+        g.drawLine(x1(100, 100), y1(100, 100), x1(220, 100), y1(220, 100));
+        g.drawLine(x1(140, 140), y1(140, 140), x1(220, 140), y1(220, 140));
+        g.drawLine(x1(160, 180), y1(160, 180), x1(220, 180), y1(220, 180));
+        g.drawLine(x1(160, 220), y1(160, 220), x1(180, 220), y1(180, 220));
+        g.drawLine(x1(140, 260), y1(140, 260), x1(180, 260), y1(180, 260));
+        g.drawLine(x1(100, 300), y1(100, 300), x1(220, 300), y1(220, 300));        
+
+        g.drawLine(x1(100, 100), y1(100, 100), x1(100, 300), y1(100, 300));
+        g.drawLine(x1(140, 140), y1(140, 140), x1(140, 260), y1(140, 260));
+        g.drawLine(x1(160, 180), y1(160, 180), x1(160, 220), y1(160, 220));
+        g.drawLine(x1(180, 220), y1(180, 220), x1(180, 260), y1(180, 260));
+        g.drawLine(x1(220, 180), y1(220, 180), x1(220, 300), y1(220, 300));
+        g.drawLine(x1(220, 100), y1(220, 100), x1(220, 140), y1(220, 140));
+        
+        //Membuat 5
+        g.drawLine(x1(240, 100), y1(240, 100), x1(360, 100), y1(360, 100));
+        g.drawLine(x1(280, 140), y1(280, 140), x1(360, 140), y1(360, 140));
+        g.drawLine(x1(280, 180), y1(280, 180), x1(360, 180), y1(360, 180));
+        g.drawLine(x1(240, 220), y1(240, 220), x1(320, 220), y1(320, 220));
+        g.drawLine(x1(240, 260), y1(240, 260), x1(320, 260), y1(320, 260));
+        g.drawLine(x1(240, 300), y1(240, 300), x1(360, 300), y1(360, 300));
+
+        g.drawLine(x1(240, 100), y1(240, 100), x1(240, 220), y1(240, 220));
+        g.drawLine(x1(240, 260), y1(240, 260), x1(240, 300), y1(240, 300));
+        g.drawLine(x1(280, 140), y1(280, 140), x1(280, 180), y1(280, 180));
+        g.drawLine(x1(320, 220), y1(320, 220), x1(320, 260), y1(320, 260));
+        g.drawLine(x1(360, 100), y1(360, 100), x1(360, 140), y1(360, 140));
+        g.drawLine(x1(360, 180), y1(360, 180), x1(360, 300), y1(360, 300));
+        
+        //Membuat 7
+        g.drawLine(x1(380, 100), y1(380, 100), x1(500, 100), y1(500, 100));
+        g.drawLine(x1(380, 140), y1(380, 140), x1(460, 140), y1(460, 140));
+        g.drawLine(x1(460, 300), y1(460, 300), x1(500, 300), y1(500, 300));
+
+        g.drawLine(x1(380, 100), y1(380, 100), x1(380, 140), y1(380, 140));
+        g.drawLine(x1(460, 140), y1(460, 140), x1(460, 300), y1(460, 300));
+        g.drawLine(x1(500, 100), y1(500, 100), x1(500, 300), y1(500, 300));
+
+        //Membuat 3
+        g.drawLine(x1(520, 100), y1(520, 100), x1(640, 100), y1(640, 100));
+        g.drawLine(x1(520, 140), y1(520, 140), x1(600, 140), y1(600, 140));
+        g.drawLine(x1(520, 180), y1(520, 180), x1(600, 180), y1(600, 180));
+        g.drawLine(x1(520, 220), y1(520, 220), x1(600, 220), y1(600, 220));
+        g.drawLine(x1(520, 260), y1(520, 260), x1(600, 260), y1(600, 260));
+        g.drawLine(x1(520, 300), y1(520, 300), x1(640, 300), y1(640, 300));        
+
+        g.drawLine(x1(520, 100), y1(520, 100), x1(520, 140), y1(520, 140));
+        g.drawLine(x1(520, 180), y1(520, 180), x1(520, 220), y1(520, 220));
+        g.drawLine(x1(520, 260), y1(520, 260), x1(520, 300), y1(520, 300));
+        g.drawLine(x1(600, 140), y1(600, 140), x1(600, 180), y1(600, 180));
+        g.drawLine(x1(600, 220), y1(600, 220), x1(600, 260), y1(600, 260));
+        g.drawLine(x1(640, 100), y1(640, 100), x1(640, 300), y1(640, 300));
+
+        //Membuat 8
+        g.drawLine(x1(660, 100), y1(660, 100), x1(780, 100), y1(780, 100));
+        g.drawLine(x1(700, 140), y1(700, 140), x1(740, 140), y1(740, 140));
+        g.drawLine(x1(700, 180), y1(700, 180), x1(740, 180), y1(740, 180));
+        g.drawLine(x1(700, 220), y1(700, 220), x1(740, 220), y1(740, 220));
+        g.drawLine(x1(700, 260), y1(700, 260), x1(740, 260), y1(740, 260));
+        g.drawLine(x1(660, 300), y1(660, 300), x1(780, 300), y1(780, 300));        
+
+        g.drawLine(x1(660, 100), y1(660, 100), x1(660, 300), y1(660, 300));
+        g.drawLine(x1(700, 140), y1(700, 140), x1(700, 180), y1(700, 180));
+        g.drawLine(x1(700, 220), y1(700, 220), x1(700, 260), y1(700, 260));
+        g.drawLine(x1(740, 140), y1(740, 140), x1(740, 180), y1(740, 180));
+        g.drawLine(x1(740, 220), y1(740, 220), x1(740, 260), y1(740, 260));
+        g.drawLine(x1(780, 100), y1(780, 100), x1(780, 300), y1(780, 300));
+
+        //Membuat o
+        g.drawLine(x1(800, 100), y1(800, 100), x1(920, 100), y1(920, 100));
+        g.drawLine(x1(840, 140), y1(840, 140), x1(880, 140), y1(880, 140));
+        g.drawLine(x1(840, 260), y1(840, 260), x1(880, 260), y1(880, 260));
+        g.drawLine(x1(800, 300), y1(800, 300), x1(920, 300), y1(920, 300));        
+
+        g.drawLine(x1(800, 100), y1(800, 100), x1(800, 300), y1(800, 300));
+        g.drawLine(x1(840, 140), y1(840, 140), x1(840, 260), y1(840, 260));
+        g.drawLine(x1(880, 140), y1(880, 140), x1(880, 260), y1(880, 260));
+        g.drawLine(x1(920, 100), y1(920, 100), x1(920, 300), y1(920, 300));
+     
+        //Membuat G
+//        g.drawLine(100+x, 100+y, 220+x, 100+y);
+//        g.drawLine(140+x, 140+y, 220+x, 140+y);
+//        g.drawLine(160+x, 180+y, 220+x, 180+y);
+//        g.drawLine(160+x, 220+y, 180+x, 220+y);
+//        g.drawLine(140+x, 260+y, 180+x, 260+y);
+//        g.drawLine(100+x, 300+y, 220+x, 300+y);        
+//
+//        g.drawLine(100+x, 100+y, 100+x, 300+y);
+//        g.drawLine(140+x, 140+y, 140+x, 260+y);
+//        g.drawLine(160+x, 180+y, 160+x, 220+y);
+//        g.drawLine(180+x, 220+y, 180+x, 260+y);
+//        g.drawLine(220+x, 180+y, 220+x, 300+y);
+//        g.drawLine(220+x, 100+y, 220+x, 140+y);
+//        
+//        //Membuat 5
+//        g.drawLine(240+x, 100+y, 360+x, 100+y);
+//        g.drawLine(280+x, 140+y, 360+x, 140+y);
+//        g.drawLine(280+x, 180+y, 360+x, 180+y);
+//        g.drawLine(240+x, 220+y, 320+x, 220+y);
+//        g.drawLine(240+x, 260+y, 320+x, 260+y);
+//        g.drawLine(240+x, 300+y, 360+x, 300+y);        
+//
+//        g.drawLine(240+x, 100+y, 240+x, 220+y);
+//        g.drawLine(240+x, 260+y, 240+x, 300+y);
+//        g.drawLine(280+x, 140+y, 280+x, 180+y);
+//        g.drawLine(320+x, 220+y, 320+x, 260+y);
+//        g.drawLine(360+x, 100+y, 360+x, 140+y);
+//        g.drawLine(360+x, 180+y, 360+x, 300+y);
+//        
+//        //Membuat 7
+//        g.drawLine(380+x, 100+y, 500+x, 100+y);
+//        g.drawLine(380+x, 140+y, 460+x, 140+y);
+//        g.drawLine(460+x, 300+y, 500+x, 300+y);        
+//
+//        g.drawLine(380+x, 100+y, 380+x, 140+y);
+//        g.drawLine(460+x, 140+y, 460+x, 300+y);
+//        g.drawLine(500+x, 100+y, 500+x, 300+y);
+//
+//        //Membuat 3
+//        g.drawLine(520+x, 100+y, 640+x, 100+y);
+//        g.drawLine(520+x, 140+y, 600+x, 140+y);
+//        g.drawLine(520+x, 180+y, 600+x, 180+y);
+//        g.drawLine(520+x, 220+y, 600+x, 220+y);
+//        g.drawLine(520+x, 260+y, 600+x, 260+y);
+//        g.drawLine(520+x, 300+y, 640+x, 300+y);        
+//
+//        g.drawLine(520+x, 100+y, 520+x, 140+y);
+//        g.drawLine(520+x, 180+y, 520+x, 220+y);
+//        g.drawLine(520+x, 260+y, 520+x, 300+y);
+//        g.drawLine(600+x, 140+y, 600+x, 180+y);
+//        g.drawLine(600+x, 220+y, 600+x, 260+y);
+//        g.drawLine(640+x, 100+y, 640+x, 300+y);
+//
+//        //Membuat 8
+//        g.drawLine(660+x, 100+y, 780+x, 100+y);
+//        g.drawLine(700+x, 140+y, 740+x, 140+y);
+//        g.drawLine(700+x, 180+y, 740+x, 180+y);
+//        g.drawLine(700+x, 220+y, 740+x, 220+y);
+//        g.drawLine(700+x, 260+y, 740+x, 260+y);
+//        g.drawLine(660+x, 300+y, 780+x, 300+y);        
+//
+//        g.drawLine(660+x, 100+y, 660+x, 300+y);
+//        g.drawLine(700+x, 140+y, 700+x, 180+y);
+//        g.drawLine(700+x, 220+y, 700+x, 260+y);
+//        g.drawLine(740+x, 140+y, 740+x, 180+y);
+//        g.drawLine(740+x, 220+y, 740+x, 260+y);
+//        g.drawLine(780+x, 100+y, 780+x, 300+y);
+//
+//        //Membuat o
+//        g.drawLine(800+x, 100+y, 920+x, 100+y);
+//        g.drawLine(840+x, 140+y, 880+x, 140+y);
+//        g.drawLine(840+x, 260+y, 880+x, 260+y);
+//        g.drawLine(800+x, 300+y, 920+x, 300+y);        
+//
+//        g.drawLine(800+x, 100+y, 800+x, 300+y);
+//        g.drawLine(840+x, 140+y, 840+x, 260+y);
+//        g.drawLine(880+x, 140+y, 880+x, 260+y);
+//        g.drawLine(920+x, 100+y, 920+x, 300+y);
+        
+    }
+}
